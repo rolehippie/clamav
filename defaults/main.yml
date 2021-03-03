@@ -1,0 +1,9 @@
+# Standards: 0.1
+---
+# @var clamav_tcp_addr:description: Address to bind for tcp connections
+clamav_tcp_addr: 127.0.0.1
+
+# @var clamav_tcp_socket:description: Port to bind for tcp connections
+clamav_tcp_socket: 3310
+
+...
