@@ -3,14 +3,14 @@
   loop:
     - clamav-daemon
     - clamav-freshclam
-  package:
+  ansible.builtin.package:
     name: "{{ item }}"
     state: present
   tags:
     - clamav
 
 - name: Create service directory
-  file:
+  ansible.builtin.file:
     path: /etc/systemd/system/clamav-daemon.service.d
     owner: root
     group: root
@@ -22,7 +22,7 @@
 - name: Write service override
   notify:
     - Restart clamav
-  template:
+  ansible.builtin.template:
     src: override.j2
     dest: /etc/systemd/system/clamav-daemon.service.d/override.conf
     owner: root
@@ -34,7 +34,7 @@
 - name: Write clamav config
   notify:
     - Restart clamav
-  template:
+  ansible.builtin.template:
     src: clamav.j2
     dest: /etc/clamav/clamd.conf
     owner: root
@@ -46,7 +46,7 @@
 - name: Write freshclam config
   notify:
     - Restart freshclam
-  template:
+  ansible.builtin.template:
     src: freshclam.j2
     dest: /etc/clamav/freshclam.conf
     owner: root
@@ -56,7 +56,7 @@
     - clamav
 
 - name: Start freshclam service
-  systemd:
+  ansible.builtin.systemd:
     name: clamav-freshclam
     state: started
     daemon_reload: True
@@ -66,7 +66,7 @@
     - clamav
 
 - name: Start clamav service
-  systemd:
+  ansible.builtin.systemd:
     name: clamav-daemon
     state: started
     daemon_reload: True
