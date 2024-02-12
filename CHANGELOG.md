@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.0](https://github.com/rolehippie/clamav/compare/v1.0.0...v2.0.0) (2024-02-12)
+
+
+### Features
+
+* drop support for ubuntu 18.04 ([0906e81](https://github.com/rolehippie/clamav/commit/0906e81d29cd7c4b80d785ccae8c60c0de2c9d57))
+* used full qualified collection names ([0dd816b](https://github.com/rolehippie/clamav/commit/0dd816be5093be66e5355547c00d3b9672cf369a))
+
 ## 1.0.0 (2023-01-04)
 
 
