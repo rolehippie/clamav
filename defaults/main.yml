@@ -5,4 +5,7 @@ clamav_tcp_addr: 127.0.0.1
 # @var clamav_tcp_socket:description: Port to bind for tcp connections
 clamav_tcp_socket: 3310
 
+# @varclamav_wait_for_definitons:description: Wait for the download of the freshclam definitions
+clamav_wait_for_definitons: true
+
 ...

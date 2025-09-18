@@ -59,9 +59,9 @@
   ansible.builtin.systemd:
     name: clamav-freshclam
     state: started
-    daemon_reload: True
-    masked: False
-    enabled: True
+    daemon_reload: true
+    masked: false
+    enabled: true
   tags:
     - clamav
 
@@ -69,9 +69,21 @@
   ansible.builtin.systemd:
     name: clamav-daemon
     state: started
-    daemon_reload: True
-    masked: False
-    enabled: True
+    daemon_reload: true
+    masked: false
+    enabled: true
+  tags:
+    - clamav
+
+- name: Wait for definitions
+  when:
+    - clamav_wait_for_definitons
+  loop:
+    - /var/lib/clamav/daily.cvd
+    - /var/lib/clamav/main.cvd
+  ansible.builtin.wait_for:
+    path: "{{ item }}"
+    timeout: 60
   tags:
     - clamav
 

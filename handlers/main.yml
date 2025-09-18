@@ -1,14 +1,14 @@
 ---
-- name: Restart clamav
-  ansible.builtin.systemd:
-    name: clamav-daemon
-    state: restarted
-    daemon_reload: True
-
 - name: Restart freshclam
   ansible.builtin.systemd:
     name: clamav-freshclam
     state: restarted
-    daemon_reload: True
+    daemon_reload: true
+
+- name: Restart clamav
+  ansible.builtin.systemd:
+    name: clamav-daemon
+    state: restarted
+    daemon_reload: true
 
 ...
