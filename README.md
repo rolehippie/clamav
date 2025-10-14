@@ -19,7 +19,7 @@ Building and improving this Ansible role have been sponsored by my current and p
 - [Default Variables](#default-variables)
   - [clamav_tcp_addr](#clamav_tcp_addr)
   - [clamav_tcp_socket](#clamav_tcp_socket)
-  - [clamav_wait_for_definitons](#clamav_wait_for_definitons)
+  - [clamav_wait_for_definitions](#clamav_wait_for_definitions)
 - [Discovered Tags](#discovered-tags)
 - [Dependencies](#dependencies)
 - [License](#license)
@@ -53,12 +53,12 @@ Port to bind for tcp connections
 clamav_tcp_socket: 3310
 ```
 
-### clamav_wait_for_definitons
+### clamav_wait_for_definitions
 
 #### Default value
 
 ```YAML
-clamav_wait_for_definitons: 60
+clamav_wait_for_definitions: 60
 ```
 
 ## Discovered Tags

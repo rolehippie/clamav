@@ -77,7 +77,7 @@
 
 - name: Wait for definitions
   when:
-    - clamav_wait_for_definitons > 0
+    - clamav_wait_for_definitions > 0
   loop:
     - /var/lib/clamav/daily.cvd
     - /var/lib/clamav/main.cvd
