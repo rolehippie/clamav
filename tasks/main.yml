@@ -77,13 +77,13 @@
 
 - name: Wait for definitions
   when:
-    - clamav_wait_for_definitons
+    - clamav_wait_for_definitons > 0
   loop:
     - /var/lib/clamav/daily.cvd
     - /var/lib/clamav/main.cvd
   ansible.builtin.wait_for:
     path: "{{ item }}"
-    timeout: 60
+    timeout: "{{ clamav_wait_for_definitions }}"
   tags:
     - clamav
 

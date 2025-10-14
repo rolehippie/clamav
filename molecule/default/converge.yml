@@ -1,6 +1,8 @@
 ---
 - name: Converge
   hosts: all
+  vars:
+    clamav_wait_for_definitons: 300
   roles:
     - role: rolehippie.clamav
 

@@ -58,7 +58,7 @@ clamav_tcp_socket: 3310
 #### Default value
 
 ```YAML
-clamav_wait_for_definitons: true
+clamav_wait_for_definitons: 60
 ```
 
 ## Discovered Tags
