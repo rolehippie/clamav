@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.2.0](https://github.com/rolehippie/clamav/compare/v2.1.0...v2.2.0) (2025-10-20)
+
+
+### Features
+
+* drop support for ubuntu 20.04, updates are blocked ([bce7728](https://github.com/rolehippie/clamav/commit/bce772899a40be7cfeff603d70a55a269534c555))
+* make timeout for definitons configurable ([847ce19](https://github.com/rolehippie/clamav/commit/847ce19115f07e35f49f973d3bec5b58b827d673))
+
+
+### Bugfixes
+
+* resolve typo for defaults name ([9952e60](https://github.com/rolehippie/clamav/commit/9952e6010cf56f8dd802debc147b0a3f11a45b8c))
+
 ## [2.1.0](https://github.com/rolehippie/clamav/compare/v2.0.0...v2.1.0) (2025-09-18)
 
 
