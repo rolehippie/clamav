@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.5.0](https://github.com/rolehippie/clamav/compare/v2.4.0...v2.5.0) (2026-08-17)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-lint to v26.8.0 ([#51](https://github.com/rolehippie/clamav/issues/51)) ([cb8acd9](https://github.com/rolehippie/clamav/commit/cb8acd9c0d2c9479d41e836fd5d9f0ecd5019688))
+* **patch:** update dependency pipx:ansible-core to v2.21.3 ([#49](https://github.com/rolehippie/clamav/issues/49)) ([d51e570](https://github.com/rolehippie/clamav/commit/d51e5703fd655ebba3a65a7f9ebcd88dd047a0e7))
+* **patch:** update dependency pre-commit to v4.6.2 ([#50](https://github.com/rolehippie/clamav/issues/50)) ([79c7964](https://github.com/rolehippie/clamav/commit/79c79641d26f61fafe85dd82c748c76f7843fdbc))
+
 ## [2.4.0](https://github.com/rolehippie/clamav/compare/v2.3.0...v2.4.0) (2026-08-10)
 
 ### Dependencies
