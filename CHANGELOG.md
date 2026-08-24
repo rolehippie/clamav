@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.6.0](https://github.com/rolehippie/clamav/compare/v2.5.0...v2.6.0) (2026-08-24)
+
+### Dependencies
+
+* **minor:** update dependency pipx:molecule to v26.8.0 ([#52](https://github.com/rolehippie/clamav/issues/52)) ([21314ad](https://github.com/rolehippie/clamav/commit/21314adec7679d95c5ca22485a0f67899dfaeebc))
+
 ## [2.5.0](https://github.com/rolehippie/clamav/compare/v2.4.0...v2.5.0) (2026-08-17)
 
 ### Dependencies
