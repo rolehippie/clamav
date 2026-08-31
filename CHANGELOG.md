@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.6.1](https://github.com/rolehippie/clamav/compare/v2.6.0...v2.6.1) (2026-08-31)
+
+### Dependencies
+
+* **patch:** update dependency pipx:ansible-doctor to v8.4.1 ([#53](https://github.com/rolehippie/clamav/issues/53)) ([497d90e](https://github.com/rolehippie/clamav/commit/497d90e2d3055828197dc1e966902b569bd57261))
+
 ## [2.6.0](https://github.com/rolehippie/clamav/compare/v2.5.0...v2.6.0) (2026-08-24)
 
 ### Dependencies
