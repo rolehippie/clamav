@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.7.0](https://github.com/rolehippie/clamav/compare/v2.6.1...v2.7.0) (2026-09-07)
+
+### Features
+
+* add separate requirements for molecule run ([3eba881](https://github.com/rolehippie/clamav/commit/3eba8816e40cd74f2e468659fb9c8457da96b0a6))
+
 ## [2.6.1](https://github.com/rolehippie/clamav/compare/v2.6.0...v2.6.1) (2026-08-31)
 
 ### Dependencies
